@@ -10,7 +10,7 @@ class TryBoxApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(debugShowCheckedModeBanner: false, 
-    home:MyHomePage(),
+    home:TryBoxApp(),
     );
   }
 }
@@ -32,3 +32,4 @@ class _TryBoxscreenState extends State<TryBoxscreen> {
     );
   }
 }
+
