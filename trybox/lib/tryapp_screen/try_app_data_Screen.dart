@@ -12,6 +12,10 @@ class _TryAppDataScreenState extends State<TryAppDataScreen> {
   
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("try box"),
+      ),
+    );
   }
 }
