@@ -1,20 +1,32 @@
 import 'package:flutter/material.dart';
 
-class TryAppDataScreen extends StatefulWidget{
+class TryAppDataScreen extends StatefulWidget {
   const TryAppDataScreen({super.key});
-  
-  @override
-  State<TryAppDataScreen> createState () => _TryAppDataScreenState();
 
+  @override
+  State<TryAppDataScreen> createState() => _TryAppDataScreenState();
 }
 
 class _TryAppDataScreenState extends State<TryAppDataScreen> {
-  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("try box"),
+        backgroundColor: Colors.black,
+        title: Center(
+          child: Text(
+            "Try Box",
+            style: TextStyle(fontWeight: FontWeight.w900, color: Colors.white),
+          ),
+        ),
+      ),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text("dfkjn")
+          ],
+        ),
       ),
     );
   }
