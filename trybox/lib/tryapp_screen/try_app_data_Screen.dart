@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:trybox/widget/listscreen.dart';
 
 class TryAppDataScreen extends StatefulWidget {
   const TryAppDataScreen({super.key});
@@ -20,14 +21,12 @@ class _TryAppDataScreenState extends State<TryAppDataScreen> {
           ),
         ),
       ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text("dfkjn")
-          ],
-        ),
-      ),
+      body:ListView.builder(
+        itemCount: 20,
+        itemBuilder:(context, index){
+          return Listscreen()
+;        }),
+      
     );
   }
 }
